@@ -31,7 +31,6 @@ jobs:
           publish_branch: main
           external_repository: rvdm/rvdm.net
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           allow_empty_commit: false
           commit_message: ${{ github.event.head_commit.message }}
