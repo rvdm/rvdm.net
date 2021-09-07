@@ -1,4 +1,3 @@
-baseURL = 'https://rvdm.net/'
 languageCode = 'en-us'
 title = 'rvdm.net'
 theme = "anubis"
