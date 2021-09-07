@@ -26,13 +26,10 @@ jobs:
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        env:
-          # ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-	        EXTERNAL_REPOSITORY: rvdm/rvdm.net
-	        PUBLISH_BRANCH: main
-	        PUBLISH_DIR: ./public
         if: github.ref == 'refs/heads/main'
         with:
+          publish_branch: main
+          external_repository: rvdm/rvdm.net
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
