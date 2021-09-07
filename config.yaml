@@ -1,6 +1,6 @@
-languageCode = 'en-us'
-title = 'rvdm.net'
-theme = "anubis"
+languageCode: "en-us"
+title: "rvdm.net"
+theme: "anubis"
 googleAnalytics: "G-CH1XZBV1KR"
 enableRobotsTXT: true
 
