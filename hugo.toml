@@ -1,0 +1,87 @@
+title = "rvdm.net"
+theme = "risotto"
+author = "rvdm"
+copyright = "© [rvdm](https://rvdm.net)"
+enableRobotsTXT = true
+enableEmoji = true
+enableGitInfo = true
+enableInlineShortcodes = true
+languageCode = "en"
+DefaultContentLanguage = "en"
+# prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
+# See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
+ignoreErrors = ["error-remote-getjson"]
+# Automatically add content sections to main menu
+sectionPagesMenu = "main"
+
+[frontmatter]
+date = [ "date", "publishDate", "lastmod" ]
+lastmod = [ ":git", "lastmod", "date", "publishDate" ]
+publishDate = [ "publishDate", "date" ]
+
+[pagination]
+pagerSize = 3
+
+[permalinks]
+"/" = "/:slug"
+posts = "/posts/:slug"
+
+[params]
+author = "rvdm"
+dateFormat = "01-02-2006"
+readMore = true
+style = "auto"
+noindex = "false"
+
+[params.about]
+title = "rvdm.net"
+description = "rvdm's rarely updated hugo site"
+
+[params.theme]
+palette = "base16-dark"
+
+[[params.socialLinks]]
+icon = "fa-brands fa-github"
+title = "GitHub"
+url = "https://github.com/rvdm"
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[[menu.main]]
+identifier = "bgp"
+name = "bgp"
+title = "BGP"
+url = "/bgp/"
+weight = 1
+
+[[menu.main]]
+identifier = "posts"
+name = "posts"
+title = "Posts"
+url = "/posts/"
+weight = 1
+
+[[menu.main]]
+identifier = "about"
+name = "about"
+title = "About"
+url = "/about/"
+weight = 0
+
+[services.googleAnalytics]
+ID = "G-CH1XZBV1KR"
+
+[services.disqus]
+shortname = "rvdm"
+
+[markup]
+
+  # Table of contents
+  # Add toc = true to content front matter to enable
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel   = 3
+    ordered    = true
