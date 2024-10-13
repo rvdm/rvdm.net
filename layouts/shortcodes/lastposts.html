@@ -1,0 +1,8 @@
+{{ $count := .Get "count" | default 3 }}
+<h3>Last Posts</h3>
+<ul>
+  {{ range ( where .Site.RegularPages "Type" "posts" | first $count ) }}
+      <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+      </li>
+  {{ end }}
+</ul>
