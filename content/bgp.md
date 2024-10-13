@@ -2,7 +2,6 @@
 title: "bgp"
 date: 2024-10-13T17:50:35+02:00
 draft: false
-menu: "main"
 ---
 ---
 

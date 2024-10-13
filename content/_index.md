@@ -15,3 +15,5 @@ Specifically, if you're interested to learn about what I'm doing with BGP, take 
 
 The [posts](https://rvdm.net/posts/) page should eventually have some blog updates.
 
+
+{{< lastposts >}}
